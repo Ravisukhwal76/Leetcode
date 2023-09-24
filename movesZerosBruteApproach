@@ -13,3 +13,19 @@ class Solution {
         }
     }
 }
+// optimized 
+
+class Solution {
+    public void moveZeroes(int[] nums) {
+         int j=0;
+         for(int i : nums){
+          if( i !=0){
+           nums[j]=i;
+           j++;
+          }
+         }
+         for(int i=j;j<nums.length;i++){
+           nums[i]=0;
+         }
+    }
+}
